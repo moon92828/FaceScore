@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:id="@+id/title"
+        android:gravity="center_vertical"
+
+        >
+        <TextView
+            android:id="@+id/editdetail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ease_back"
+            android:text="@string/back"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dip"
+            android:textColor="@drawable/text_blue" />
+
+        <TextView
+            android:id="@+id/edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑个人资料"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/editdetail_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:textSize="16sp"
+            android:textColor="@drawable/text_blue" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/superinput"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/edit_bg"
+        >
+
+        <EditText
+            android:id="@+id/signature_et"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:gravity="left"
+            android:background="#00ffffff"
+            android:paddingLeft="12.0dip"
+            android:textColor="#808080"
+            android:textColorHint="#ff666666"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/edit_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#808080"
+            />
+    </RelativeLayout>
+</LinearLayout>

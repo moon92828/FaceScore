@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ContactItemView">
+        <attr name="contactItemImage" format="reference"/>
+        <attr name="contactItemName" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="HeartProgressBar">
+        <attr name="heartColor" format="color" />
+    </declare-styleable>
+
+</resources>

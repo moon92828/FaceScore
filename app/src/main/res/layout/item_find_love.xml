@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_people_photo"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/default_content_pic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_people_photo"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/people_like"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_like"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/people_like"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="喜欢"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/find_love_middle_line" />
+
+            <RelativeLayout
+                android:layout_width="125dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/people_unlike"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_unlike"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/people_unlike"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:text="没兴趣"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

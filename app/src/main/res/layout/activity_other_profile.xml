@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffffbf0">
+
+    <RelativeLayout
+        android:id="@+id/otherprofile_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue" >
+
+        <include layout="@layout/ease_commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:text="她的信息"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <demo.widget.PagerScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/otherprofile_bottom"
+        android:layout_below="@+id/otherprofile_header"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_other_profile_photos" />
+
+            <include layout="@layout/item_other_profile_feed" />
+
+            <include layout="@layout/item_other_profile_account_info"/>
+
+        </LinearLayout>
+    </demo.widget.PagerScrollView>
+
+    <include
+        android:id="@+id/otherprofile_bottom"
+        layout="@layout/item_other_profile_bottom" />
+
+</RelativeLayout>
